@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/ll_rbtn_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_first"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_first_bankground"
+            android:text="first"
+            android:textColor="@drawable/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_second"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_secend_bankground"
+            android:text="second"
+            android:textColor="@drawable/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_thrid"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_thrid_bankground"
+            android:text="thrid"
+            android:textColor="@drawable/radio_colors" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_rbtn_contain"
+        android:layout_alignParentTop="true"></FrameLayout>
+
+</RelativeLayout>
